@@ -5,7 +5,9 @@
   "scripts": {
     "relay": "./node_modules/.bin/wsrelay 4000",
     "start": "node runpackager.js",
-    "open": "node -e \"require('xopen')('http://localhost:8081/Examples/Pairs/vr')\""
+    "open": "node -e \"require('xopen')('http://localhost:8081/Examples/Pairs/vr')\"",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "jasmine-check": "^1.0.0-rc.0",
@@ -13,6 +15,8 @@
     "redux": "^3.6.0",
     "uuid": "^3.0.1",
     "wsrelay": "^1.0.0",
-    "xopen": "1.0.0"
-  }
+    "xopen": "1.0.0",
+    "snyk": "^*"
+  },
+  "snyk": true
 }
