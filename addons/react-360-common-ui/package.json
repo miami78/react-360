@@ -19,6 +19,12 @@
   "dependencies": {
     "react": "16.3.2",
     "react-native": "0.55.4",
-    "react-360": "1.1.0"
-  }
+    "react-360": "1.1.0",
+    "snyk": "^1.316.1"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
