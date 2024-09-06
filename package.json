@@ -63,7 +63,7 @@
     "test": "jest --config jest/config-unit.json"
   },
   "dependencies": {
-    "create-react-class": "^15.6.0",
+    "create-react-class": "^15.7.0",
     "prop-types": "^15.5.10"
   }
 }
